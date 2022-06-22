@@ -1,0 +1,9 @@
+# convert to .py file
+!jupyter nbconvert --to script starter.ipynb
+
+# command for virtual env creation
+pipenv install scikit-learn==1.0.2 flask --python 3.9
+
+# docker cmd
+docker build -t homework4 .
+docker run -it -p 9696:9696 homework4 bash
